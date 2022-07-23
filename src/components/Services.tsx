@@ -1,6 +1,14 @@
 import React, { useState } from 'react'
 
-const ServiceItem = (props:any) => {
+interface ServiceItemProps {
+    item: {
+        title: string;
+        type: string;
+        skills: string[]
+    }
+}
+
+const ServiceItem = (props:ServiceItemProps) => {
 
     const { item } = props;
     const [modalState, setModalState] = useState(false)
@@ -20,18 +28,14 @@ const ServiceItem = (props:any) => {
                     <h4 className="services__modal-title">{item.title} <br />{item.type}</h4>
                     <i onClick={() => {setModalState(false)}} className="uil uil-times services__modal-close"></i>
                     <ul className="services__modal-services grid">
-                        <li className="services__modal-service">
-                            <i className="uil uil-check-circle services__modal-icon"></i>
-                            <p>I develop the user interface.</p>
-                        </li>
-                        <li className="services__modal-service">
-                            <i className="uil uil-check-circle services__modal-icon"></i>
-                            <p>Web page development.</p>
-                        </li>
-                        <li className="services__modal-service">
-                            <i className="uil uil-check-circle services__modal-icon"></i>
-                            <p>I position your company brand</p>
-                        </li>
+                        {
+                            item.skills.map((skill, index) => (
+                                <li key={index} className="services__modal-service">
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
+                                    <p>{skill}</p>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
             </div>
@@ -44,11 +48,23 @@ function Services() {
     const myServices = [
         {
             title: 'Frontend',
-            type: 'developer'
+            type: 'developer',
+            skills: [
+                'Developing and implementing highly responsive user interface components using react concepts.',
+                'Writing application interface codes using JavaScript following react.js workflows.',
+                'Developing and implementing front-end architecture to support user interface concepts.',
+                'Monitoring and improving front-end performance.'
+            ]
         },
         {
-            title: 'Backend',
-            type: 'developer'
+            title: 'Mobile',
+            type: 'developer',
+            skills: [
+                'I design and implement user interface components for JavaScript-based web and mobile applications using React ecosystem.',
+                ' Native APIs for tight integrations with both platforms – Android and iOS.',
+                'Implementing clean, smooth animations to provide an excellent user interface.',
+                'Working with third-party dependencies and APIs.'
+            ]
         }
     ]
 

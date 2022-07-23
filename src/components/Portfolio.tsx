@@ -1,28 +1,33 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
-import PortfolioImage1 from '../assets/images/portfolio1.jpg'
-import PortfolioImage2 from '../assets/images/portfolio2.jpg'
+import PortfolioImage1 from '../assets/images/portfolio1.PNG'
+import PortfolioImage2 from '../assets/images/portfolio2.PNG'
 import PortfolioImage3 from '../assets/images/portfolio3.jpg'
+import softdata from '../assets/images/softdata.jpg'
 
 function Portfolio() {
 
     const portfolios = [
         {
-            title: 'Modern Website',
+            title: 'Softdata',
             description: 'Website adaptable to all devices, with ui components and animated interactions.',
-            img: PortfolioImage1
+            img: softdata,
+            link: 'https://sarzeez.github.io/softdata/'
         },
         {
-            title: 'Brand Design',
+            title: 'Grid layout with Tailwind CSS',
             description: 'Website adaptable to all devices, with ui components and animated interactions.',
-            img: PortfolioImage2
+            img: PortfolioImage1,
+            link: 'https://sarzeez.github.io/grid-tailwind-css/'
         },
         {
-            title: 'Online Store',
+            title: 'RememberThat',
             description: 'Website adaptable to all devices, with ui components and animated interactions.',
-            img: PortfolioImage3
-        }
+            img: PortfolioImage2,
+            link: 'https://sparkling-moxie-7bf207.netlify.app/'
+        },
+        
     ]
 
     return (
@@ -48,7 +53,7 @@ function Portfolio() {
                                         <div className="portfolio__data">
                                             <h3 className="portfolio__title">{item.title}</h3>
                                             <p className="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
-                                            <a href="#12" className="button button--flex button--small portfolio__button">
+                                            <a href={item.link} target={'_blank'} className="button button--flex button--small portfolio__button" rel="noreferrer">
                                                 Demo
                                                 <i className="uil uil-arrow-right button__icon"></i>
                                             </a>

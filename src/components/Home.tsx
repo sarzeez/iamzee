@@ -1,4 +1,6 @@
-import HomeImage from '../assets/images/perfil.png'
+// import HomeImage from '../assets/images/perfil.png'
+// import developer from '../assets/images/developer.gif'
+import iamzee from '../assets/images/iamzee.png'
 
 function Home() {
   return (
@@ -6,13 +8,13 @@ function Home() {
         <div className="home__container container grid">
             <div className="home__content grid">
                 <div className="home__social">
-                    <a href="https://www.linkedin.com/" className="home__social-icon" target={'_blank'} rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/sarzeez" className="home__social-icon" target={'_blank'} rel="noreferrer">
                         <i className="uil uil-linkedin-alt"></i>
                     </a>
-                    <a href="https://dribbble.com/" className="home__social-icon" target={'_blank'} rel="noreferrer">
-                        <i className="uil uil-dribbble"></i>
+                    <a href="https://sarzeez1997@gmail.com/" className="home__social-icon" target={'_blank'} rel="noreferrer">
+                        <i className="uil uil-envelope"></i>
                     </a>
-                    <a href="https://github.com/" className="home__social-icon" target={'_blank'} rel="noreferrer">
+                    <a href="https://github.com/sarzeez" className="home__social-icon" target={'_blank'} rel="noreferrer">
                         <i className="uil uil-github-alt"></i>
                     </a>
                 </div>
@@ -29,22 +31,25 @@ function Home() {
                             165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                             129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                             -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            <image className='home__blob-img' x='12' y='18' xlinkHref={HomeImage} />
+                            <image className='home__blob-img' x='12' y='18' xlinkHref={iamzee} />
                         </g>
                     </svg>
                 </div>
+                {/* <div className='home__img'>
+                    <img src={developer} alt="developer gif"  />
+                </div> */}
                 <div className="home__data">
                     <h1 className="home__title">Hi, I'm Abdulaziz</h1>
                     <h3 className="home__subtitle">Frontend developer</h3>
                     <p className="home__description">High level experience in web design and development knowledge, producing quality work.</p>
-                    <a href="#as" className="button button--flex">
+                    <a href="https://t.me/sarzeez" target={'_blank'} className="button button--flex" rel="noreferrer">
                         Contact me <i className="uil uil-message button__icon"></i>
                     </a>
                 </div>
 
             </div>
             <div className="home__scroll">
-                <a href="#asdf" className="home__scroll-button button--flex">
+                <a href="#about" className="home__scroll-button button--flex">
                     <i className="uil uil-mouse-alt home__scroll-mouse"></i>
                     <span className="home__scroll-name">Scroll down</span>
                     <i className="uil uil-arrow-down home__scroll-arrow"></i>

@@ -43,9 +43,9 @@ function Skills() {
             percentage: [90, 80, 75, 85]
         },
         {
-            title: 'Backend developer',
+            title: 'Mobile developer',
             experience: '0.5 year',
-            technologies: ['Node JS', 'Express JS', 'MongoDB', 'MySQL'],
+            technologies: ['React Native'],
             percentage: [60, 65, 60, 60]
         }
     ]
