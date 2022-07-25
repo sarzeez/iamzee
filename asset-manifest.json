@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/iamzee/static/css/main.cc216454.css",
+    "main.js": "/iamzee/static/js/main.3e8ed1e5.js",
+    "static/media/cv.pdf": "/iamzee/static/media/cv.6b2362a02b7f14039cde.pdf",
+    "static/media/Poppins-Regular.ttf": "/iamzee/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/project.png": "/iamzee/static/media/project.efad0f501bd12aa414c7.png",
+    "static/media/about.jpg": "/iamzee/static/media/about.caa4c1c68906d8a784f1.jpg",
+    "static/media/softdata.jpg": "/iamzee/static/media/softdata.34ea5b15a3bf2a6e2274.jpg",
+    "static/media/iamzee.png": "/iamzee/static/media/iamzee.990305c2e15ecd35ae2a.png",
+    "static/media/portfolio2.PNG": "/iamzee/static/media/portfolio2.c95a83c6d2d9a1191bbc.PNG",
+    "static/media/portfolio1.PNG": "/iamzee/static/media/portfolio1.8608f0ec7cb93c897bea.PNG",
+    "static/media/testimonial3.jpg": "/iamzee/static/media/testimonial3.0fdabd61adfa88451208.jpg",
+    "index.html": "/iamzee/index.html",
+    "main.cc216454.css.map": "/iamzee/static/css/main.cc216454.css.map",
+    "main.3e8ed1e5.js.map": "/iamzee/static/js/main.3e8ed1e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc216454.css",
+    "static/js/main.3e8ed1e5.js"
+  ]
+}
