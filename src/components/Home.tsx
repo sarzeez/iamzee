@@ -40,7 +40,7 @@ function Home() {
                     <div className="home__data">
                         <h1 className="home__title">Hi, I'm Abdulaziz</h1>
                         <h3 className="home__subtitle">Frontend developer</h3>
-                        <p className="home__description">High level experience in web design and development knowledge, producing quality work.</p>
+                        <p className="home__description">High level experience in web development knowledge, producing quality work.</p>
                         <a href="https://t.me/sarzeez" target={'_blank'} className="button button--flex" rel="noreferrer">
                             Contact me <i className="uil uil-message button__icon"></i>
                         </a>

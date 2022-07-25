@@ -9,7 +9,9 @@ function About() {
                 <img src={AboutImage} alt="About" className="about__img" />
 
                 <div className="about__data">
-                    <p className="about__description">Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
+                    <p className="about__description">Honest and hardworking Front End developer skilled at designing sites and writing clean code.
+                    Implement successful content based on user needs. Background includes graphics work and
+                    performance optimization.</p>
                     <div className="about__info">
                         <div>
                             <span className="about__info-title">08+</span>
